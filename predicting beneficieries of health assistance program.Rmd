@@ -169,49 +169,49 @@ ggplot() +
 
 In this section, we will briefly describe the 41 variables we have selected as predictors to estimate our outcome variable as discussed above. In narrowing down our list of predictor variables, we had selected variables which we believed were relevant indicators of the state of infrastructure and poverty in a village, and which would provide a reasonable measure of the likelihood (and thus, percentage) of households in each village qualifying for, and receiving, free health insurance under the national social assistance scheme. The list of predictor variables used in our analysis is shown below.
 
-| No. | Variable      | Description                                          | Type        |
-|-----|---------------|------------------------------------------------------|-------------|
-| 1   | province      | Province code                                        | Categorical |
-| 2   | urban         | Urbanicity of village                                | Categorical |
-| 3   | village_rep   | Village has a representative body                    | Categorical |
-| 4   | near_sea      | Proximity to the sea                                 | Categorical |
-| 5   | near_forest   | Proximity to a forested area                         | Categorical |
-| 6   | population    | No. of villagers                                     | Continuous  |
-| 7   | source_income | Primary source of income (e.g. agriculture, manufacturing) | Categorical |
-| 8   | hh_electricity| Has houses with electricity                          | Categorical |
-| 9   | street_lighting | Has street lighting                                | Categorical |
-| 10  | waste_disposal | Primary waste disposal method                       | Categorical |
-| 11  | sanitation     | Primary sanitation method                          | Categorical 
-| 12  | river_bank      | Near river bank                           | Categorical |
-| 13  | luxury_res    | Has luxury residences                     | Categorical |
-| 14  | slums         | Has slums                                 | Categorical |
-| 15  | pollution    | Presence of environmental pollution in the past year     | Categorical |
-| 16  | mining                  | Presence of mining activities                                   | Categorical |
-| 17  | disaster_prone          | Prone to natural disasters                                      | Categorical |
-| 18  | num_k12                 | No. of K-12 institutions                                        | Continuous  |
-| 19  | num_hs                  | No. of higher education institutions                            | Continuous  |
-| 20  | num_health_facil        | No. of hospitals and other healthcare facilities                | Continuous  |
-| 21  | num_doctors             | No. of doctors                                                  | Continuous  |
+| No. | Variable                | Description                                        | Type        |
+|-----|-------------------------|----------------------------------------------------|------------|
+| 1   | province                | Province code                                      | Categorical |
+| 2   | urban                   | Urbanicity of village                              | Categorical |
+| 3   | village_rep             | Village has a representative body                  | Categorical |
+| 4   | near_sea                | Proximity to the sea                               | Categorical |
+| 5   | near_forest             | Proximity to a forested area                       | Categorical |
+| 6   | population              | No. of villagers                                   | Continuous  |
+| 7   | source_income           | Primary source of income (e.g. agriculture, manufacturing) | Categorical |
+| 8   | hh_electricity          | Has houses with electricity                        | Categorical |
+| 9   | street_lighting         | Has street lighting                                | Categorical |
+| 10  | waste_disposal          | Primary waste disposal method                      | Categorical |
+| 11  | sanitation              | Primary sanitation method                          | Categorical |
+| 12  | river_bank              | Near river bank                                    | Categorical |
+| 13  | luxury_res              | Has luxury residences                              | Categorical |
+| 14  | slums                   | Has slums                                          | Categorical |
+| 15  | pollution               | Presence of environmental pollution in the past year | Categorical |
+| 16  | mining                  | Presence of mining activities                        | Categorical |
+| 17  | disaster_prone          | Prone to natural disasters                           | Categorical |
+| 18  | num_k12                 | No. of K-12 institutions                             | Continuous  |
+| 19  | num_hs                  | No. of higher education institutions                 | Continuous  |
+| 20  | num_health_facil        | No. of hospitals and other healthcare facilities     | Continuous  |
+| 21  | num_doctors             | No. of doctors                                       | Continuous  |
 | 22  | poor_letter             | Has households below the national poverty line in the past year | Categorical |
-| 23  | pandemic                | Presence of a pandemic in the past year                         | Categorical |
-| 24  | water_source            | Primary water source                                            | Categorical |
-| 25  | social_institutions     | Presence of social institutions                                 | Categorical |
-| 26  | disabled                | Presence of people with disabilities                            | Categorical |
-| 27  | type_road               | Type of road surface                                            | Categorical |
-| 28  | trafficability          | Vehicle trafficability                                          | Categorical |
-| 29  | dist_capital            | Distance to capital district                                    | Continuous  |
-| 30  | signal_Strength         | Handphone signal strength                                       | Categorical |
-| 31  | num_hh_cable            | No. of households with cable subscriptions                      | Continuous  |
-| 32  | land_area               | Land area                                                       | Continuous  |
-| 33  | industrial_area         | Presence of industrial area                                     | Categorical |
-| 34  | num_med_large_industry  | No. of medium/large industries                                  | Continuous  |
-| 35  | num_commercial_banks    | No. of commercial banks                                         | Continuous  |
-| 36  | num_village_banks       | No. of village banks                                            | Continuous  |
-| 37  | num_micro_finance       | No. of informal micro finance institutions                      | Continuous  |
-| 38  | num_credit_facil        | No. of credit facilities                                        | Continuous  |
-| 39  | most_common_crime       | Most common type of crime                                       | Categorical |
-| 40  | crime_rate_increase     | Rise in crime rate from past year                               | Categorical |
-| 41  | police_station          | Presence of police station                                      | Categorical |
+| 23  | pandemic                | Presence of a pandemic in the past year              | Categorical |
+| 24  | water_source            | Primary water source                                 | Categorical |
+| 25  | social_institutions     | Presence of social institutions                      | Categorical |
+| 26  | disabled                | Presence of people with disabilities                 | Categorical |
+| 27  | type_road               | Type of road surface                                 | Categorical |
+| 28  | trafficability          | Vehicle trafficability                               | Categorical |
+| 29  | dist_capital            | Distance to capital district                         | Continuous  |
+| 30  | signal_Strength         | Handphone signal strength                            | Categorical |
+| 31  | num_hh_cable            | No. of households with cable subscriptions           | Continuous  |
+| 32  | land_area               | Land area                                            | Continuous  |
+| 33  | industrial_area         | Presence of industrial area                          | Categorical |
+| 34  | num_med_large_industry  | No. of medium/large industries                       | Continuous  |
+| 35  | num_commercial_banks    | No. of commercial banks                              | Continuous  |
+| 36  | num_village_banks       | No. of village banks                                 | Continuous  |
+| 37  | num_micro_finance       | No. of informal micro finance institutions           | Continuous  |
+| 38  | num_credit_facil        | No. of credit facilities                             | Continuous  |
+| 39  | most_common_crime       | Most common type of crime                            | Categorical |
+| 40  | crime_rate_increase     | Rise in crime rate from past year                    | Categorical |
+| 41  | police_station          | Presence of police station                           | Categorical |
 
 # 3 Data Mining
 
@@ -343,54 +343,8 @@ bind_cols(bake_test,
           predict(tuned_fit, new_data = bake_test)) %>%
   rmse(truth = bake_test$perc_hh_sa, estimate = .pred)
 ```
-## 3.4. Nearest Neighbor
 
-The `nearest_neighbor()` model predict new samples in test set by defining a model that uses the K most similar data points from the training set. This model is easy to explain as in this case, we can see this model as a model that predict the share of households with the social assistance program by looking at the numbers from "neighboring" villages. In this analysis, we tuned the model to find the best $K$ that minimize rmse. 
-
-```{r echo = T, cache = TRUE, warning=FALSE, message = FALSE}
-knn_model <-
-  nearest_neighbor(neighbors = tune()) %>%
-  set_engine("kknn") %>%
-  set_mode("regression")
-
-knn_grid <- tibble(neighbors = 1:5)
-
-knn_wf <-
-  workflow() %>%
-  add_model(knn_model) %>%
-  add_recipe(podes_recipe)
-
-knn_rs <- bootstraps(podes_train, times = 5)
-
-knn_results <- tune_grid(knn_wf, resamples = knn_rs, grid = knn_grid)
-```
-
-```{r}
-library("kknn")
-```
-
-
-```{r echo = T, cache = TRUE, warning=FALSE, message = FALSE}
-(best <- knn_results %>% select_best("rmse"))
-
-knn_model <-
-  nearest_neighbor(neighbors = 5) %>%
-  set_engine("kknn") %>%
-  set_mode("regression")
-
-knn_wf <-
-  workflow() %>%
-  add_model(knn_model) %>%
-  add_recipe(podes_recipe)
-
-knn_fit <- fit(knn_wf, data = podes_train)
-```
-
-```{r}
-print(knn_fit)
-```
-
-## 3.5. Generalized Additive Models
+## 3.4. Generalized Additive Models
 This model allows us to automatically model non-linear relationships between the predictor variables and the outcome variable in our data by replacing each linear component with a smooth non-linear function, while maintaining additivity. Due to the nature of GAMs, it provides a useful compromise between linear and non-parametric models.
 
 ```{r echo = T, cache = TRUE, warning=FALSE, message = FALSE}
@@ -415,7 +369,7 @@ bind_cols(podes_test,
   rmse(truth = perc_hh_sa, estimate = .pred)
 ```
 
-## 3.6. Random Forest
+## 3.5. Random Forest
 The final model introduces a more flexible approach to predicting our outcome variable. The random forest model is derived from a decision tree approach to regression which first involves stratifying the predictor space into a set of regions, then utilizing the mean response value of the training observations in each region to assign, and thus predict, a value for any test observation that also falls within that region. Random forests drastically improves the predictive performance of a decision tree model by choosing a random sample of m predictors as split candidates from the full set of predictor variables at each branch in order to de-correlate the trees, and subsequently aggregating multiple decision trees.
 
 ```{r cache = TRUE, warning=FALSE, message = FALSE}
@@ -425,7 +379,7 @@ rf_model <- rand_forest() %>%
              importance = TRUE, 
              verbose = TRUE) %>% 
   set_mode("regression") %>% 
-  set_args(trees = 100)
+  set_args(trees = 50)
 
 rf_wf <- workflow() %>% 
   add_model(rf_model) %>% 
@@ -441,7 +395,7 @@ predict(rf_fit, new_data = podes_test) %>%
 ```
 
 # 4 Conclusion
-Based on our analysis, the random forest model appears to be the most accurate in predicting the percentage of households in a village which receive free health insurance under the national health assistance program. However, based on the rmse this model is actually not predict the test data really well. Future research should try other models and embed new variables that can help predict the test data better. Moreover, using machine learning models to predict social science outcome might also prone to validity problem (both temporal and spatial) therefore, caution needs to be made."  with "Despite this, the model does not actually predict the outcome variable very well due to the high rmse. Future research should try using other models and embed new variables that may help to better predict the test data. Moreover, using supervised learning models to predict social science outcomes may lead to issues of external validity (both temporal and spatial) therefore, caution must be taken in interpreting the model predictions
+Based on our analysis, the random forest model appears to be the most accurate in predicting the percentage of households in a village which receive free health insurance under the national health assistance program. Despite this, the model does not actually predict the outcome variable very well due to the high rmse. Future research should try using other models and embed new variables that may help to better predict the test data. Moreover, using supervised learning models to predict social science outcomes may lead to issues of external validity (both temporal and spatial) therefore, caution must be taken in interpreting the model predictions.
 
 ```{r}
 result <-
@@ -458,9 +412,6 @@ result <-
   bind_cols(podes_test, predict(rf_fit, new_data = podes_test)) %>%
       rmse(truth = podes_test$perc_hh_sa, estimate = .pred) %>%
   mutate(method = "Random Forest"),
-bind_cols(podes_test, predict(knn_fit, new_data = podes_test)) %>%
-      rmse(truth = podes_test$perc_hh_sa, estimate = .pred) %>%
-  mutate(method = "Nearest Neighbor"),
   bind_cols(podes_test, predict(GAM_fit, new_data = podes_test)) %>%
       rmse(truth = podes_test$perc_hh_sa, estimate = .pred) %>%
   mutate(method = "GAM")
@@ -468,4 +419,5 @@ bind_cols(podes_test, predict(knn_fit, new_data = podes_test)) %>%
 
 knitr::kable(result)
 ```
+
 
